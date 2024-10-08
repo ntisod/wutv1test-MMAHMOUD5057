@@ -1,12 +1,30 @@
-body {
-    background-color: #f0f0f5;
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
 
-    h1, h2 {
-        margin: 10px;
-    }
-p{
-    color:#666;
+body {
+    background-color: #E3F2FD;
+    color: #0D47A1; 
+    font-family: Arial, sans-serif;
 }
+
+h1 {
+    color: #1976D2;
+}
+
+h2 {
+    color: #0D47A1;
+}
+
+p, li, a {
+    color: #0D47A1;
+
+a:hover {
+    color: #42A5F5;
+}
+
+img {
+    border-radius: 10px;
+    border: 2px solid #1976D2;
+}
+
+
+}
+

@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.slide-menu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #222;
+    transition: left 0.3s ease-in-out;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.menu-open .slide-menu {
+    left: 0;
+}
+
+.slide-menu h2 {
+    color: white;
+}
+
+.slide-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.slide-menu ul li {
+    margin-bottom: 1rem;
+}
+
+.slide-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 3rem;
+}
+
+.title-slide, .disclamer-slide, .question-slide {
+    background-color: var(--background-secondary);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.question-slide {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

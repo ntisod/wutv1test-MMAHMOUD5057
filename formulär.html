@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dejtingsida</title>
+    <link rel="stylesheet" href="formulär.css">
+</head>
+<body>
+   
+    <form action="" method="post">
+
+        <fieldset>
+            <legend>Namn och ålder</legend>
+
+            <label>Namn</label>
+            <input type="text" name="namn" placeholder="Ange ditt namn">
+
+            <br><br>
+
+            <label>Ålder</label>
+            <select name="alder">
+                <option value="" disabled selected>Välj din ålder</option>
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-45">36-45</option>
+                <option value="46+">46+</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personliga uppgifter</legend>
+
+            <label>Kön</label>
+            <div>
+                <input type="radio" id="manlig" name="kon" value="manlig">
+                <label for="manlig">Man</label>
+            </div>
+            <div>
+                <input type="radio" id="konlig" name="kon" value="könlig">
+                <label for="konlig">Kvinna</label>
+            </div>
+
+            <br><br>
+
+            <label>Profilbild</label>
+            <input type="file" name="profilbild" accept="image/*">
+        </fieldset>
+
+       
+        <fieldset>
+            <legend>Sökt kön och intressen</legend>
+
+            <label>Sökt kön</label>
+            <div>
+                <input type="checkbox" id="sokt_man" name="sokt_kon" value="manlig">
+                <label for="sokt_man">Man</label>
+            </div>
+            <div>
+                <input type="checkbox" id="sokt_kon" name="sokt_kon" value="könlig">
+                <label for="sokt_kon">Kvinna</label>
+            </div>
+
+            <br><br>
+
+            <label>Intressen</label>
+            <input type="text" name="intressen" placeholder="Ange dina intressen">
+        </fieldset>
+        <fieldset>
+            <legend>Mål i förhållandet</legend>
+
+            <label>Mål i förhållandet?</label>
+            <div>
+                <input type="checkbox" id="mal_van" name="mal_forhaldande" value="vän">
+                <label for="mal_van">Vän</label>
+            </div>
+            <div>
+                <input type="checkbox" id="mal_kamrat" name="mal_forhaldande" value="kamrat">
+                <label for="mal_kamrat">Kamrat</label>
+            </div>
+            <div>
+                <input type="checkbox" id="mal_partner" name="mal_forhaldande" value="partner">
+                <label for="mal_partner">Partner</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Kontaktpersonal</legend>
+
+            <label>E-postadress</label>
+            <input type="email" name="email" placeholder="Ange din e-postadress">
+
+            <br><br>
+
+            <label>Lösenord</label>
+            <input type="password" name="loesenord" placeholder="Ange ditt lösenord">
+
+            <br><br>
+
+            <label>Telefonnummer</label>
+            <input type="number" name="nummer" placeholder="Ange ditt telefonnummer">
+        </fieldset>
+
+        <br><br>
+
+        <input type="submit" value="Klar">
+    </form>
+</body>
+</html>
